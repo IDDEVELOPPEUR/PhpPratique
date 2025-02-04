@@ -132,7 +132,33 @@
         // partie ajout produits 
         if($act=="addProd")
         {
-            echo "partie addprod";
+            ?>
+
+<form method="POST" action="">
+                <table cellspacing="15" cellpadding="5" border="1" align="center">
+                    <tr>
+                        <td>
+                            <input type="number" name="code" placeholder="Entrer votre numéro de produit"  required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        <input type="text" name="nom" placeholder="Entrer le nom de votre produit"  required>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="ajouterPro" value="Ajouter Produit">
+                        </td>
+                    </tr>
+                </table>
+
+
+             </form>
+             <?php
+
+             
         }
         // fin partie ajout produits
 
